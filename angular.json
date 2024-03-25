@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/babyapp",
+            "outputPath": "dist/babyCradleapp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,18 +72,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "babyapp:build"
+            "browserTarget": "babyCradleapp:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "babyapp:build:production"
+              "browserTarget": "babyCradleapp:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "babyapp:build"
+            "browserTarget": "babyCradleapp:build"
           }
         },
         "test": {
@@ -120,18 +120,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "babyapp:serve"
+            "devServerTarget": "babyCradleapp:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "babyapp:serve:production"
+              "devServerTarget": "babyCradleapp:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "babyapp",
+  "defaultProject": "babyCradleapp",
   "cli": {
     "analytics": false
   }
